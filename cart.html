@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products-SawShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+                <h1 class="logo">SawShop</h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Sawshop index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="product detail.html">Details</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="30px" height="30px">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+</div>
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="IMG_6230.JPG">
+                    <div>
+                        <p>One Piece Luffy</p>
+                        <small>Price $30.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="IMG_1197.JPG" >
+                    <div>
+                        <p>White Cap Mountain</p>
+                        <small>Price $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$80.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>$90.00</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+</div>
+
+
+<!-----footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Dowload Our App</h3>
+                <p>Dowload our App on Android </p>
+                <div class="app-logo">
+                    <img src="googlepay.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h1>SawShop</h1>
+                <p>Our Mission Is To Ptovide High Quality Art Works </p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 SawShop</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+      else
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+</script>
+
+</body>
+</html>

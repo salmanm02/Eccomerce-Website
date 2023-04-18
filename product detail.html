@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products-SawShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+                <h1 class="logo">SawShop</h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Sawshop index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="product detail.html">Details</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="30px" height="30px">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+</div>
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="IMG_1197.JPG" width="100%" id="product-img">
+        </div>
+        <div class="col-2">
+            <p>Home / Canvas</p>
+            <h1>White Cap Mountain </h1>
+            <h4>$50.00</h4>
+            <select>
+                <option>Size</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn"> Add to cart</a>
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Upgrade the decor withing your with a nice canvas</p>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+<!------ featured products ------>
+<div class="small-container">
+   
+    <div class="row">
+        <div class="col-4">
+            <img src="IMG_12.JPG">
+            <h4>Follow</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$30.00</p>
+        </div>
+        <div class="col-4">
+            <img src="IMG_6230.JPG">
+            <h4>One Piece Luffy</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$30.00</p>
+        </div>
+        <div class="col-4">
+            <img src="IMG_11.JPG">
+            <h4>Drawing</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$30.00</p>
+        </div>
+    </div>
+</div>
+
+
+<!-----footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Dowload Our App</h3>
+                <p>Dowload our App on Android </p>
+                <div class="app-logo">
+                    <img src="googlepay.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h1>SawShop</h1>
+                <p>Our Mission Is To Ptovide High Quality Art Works </p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 SawShop</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+      else
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+</script>
+
+</body>
+</html>
